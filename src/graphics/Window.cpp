@@ -34,8 +34,15 @@ namespace nirangine {
 				std::cout << "Failed to create GLFW window" << std::endl;
 				return false;
 			}
+			
 			glfwMakeContextCurrent(m_window);
 			glfwSetWindowSizeCallback(m_window, windowResize);
+			
+			if (glewInit() != GLEW_OK)
+			{
+				std::cout << "Failed to initialize GLEW" << std::endl;
+				return false;
+			}
 			return true;
 		}
 		void Window::clear() const
