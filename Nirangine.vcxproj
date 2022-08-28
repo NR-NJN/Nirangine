@@ -74,7 +74,7 @@
     <IncludePath>$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\GLFW\lib-vc2022;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Platform)\bin\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\bin\$(Configuration)\intermidiates</IntDir>
+    <IntDir>$(Platform)\bin\$(Configuration)\intermidiates\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
